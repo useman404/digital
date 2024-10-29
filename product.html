@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicité Digitale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .ad-set {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .headline {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .description {
+            font-size: 1em;
+            color: #777;
+            margin: 10px 0;
+        }
+        .primary-text {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .ad-image {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ad-set">
+        <div class="headline">Transformez votre quotidien</div>
+        <div class="description">Un produit numérique essentiel!</div>
+        <div class="primary-text">Découvrez comment simplifier votre vie avec notre boutique de produits digitaux. Explorez nos offres!</div>
+        <a href="https://www.kaspersky.ma/home-security" target="_blank">
+            <img src="image1.jpg" alt="Personne souriante avec appareils numériques" class="ad-image">
+        </a>
+    </div>
+    
+    <div class="ad-set">
+        <div class="headline">L’outil parfait à portée</div>
+        <div class="description">Innovation à votre service!</div>
+        <div class="primary-text">Rehaussez votre productivité avec nos tools numériques. Ne laissez pas passer cette chance d'améliorer vos performances!</div>
+        <a href="https://www.safewise.com/best-home-security-system/" target="_blank">
+            <img src="image2.jpg" alt="Ordinateur s'illuminant" class="ad-image">
+        </a>
+    </div>
+    
+
+
+    <script>
+        
+        document.querySelectorAll('.ad-set').forEach(ad => {
+            ad.addEventListener('click', () => {
+                alert("Découvrez nos produits!");
+            });
+        });
+    </script>
+</body>
+</html>
